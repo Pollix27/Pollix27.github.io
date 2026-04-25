@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Ángel Martin Meza – Ingeniería en Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     TOPNAV — barra de navegación fija arriba
+══════════════════════════════════════ -->
+<nav class="topnav" id="topnav">
+  <a href="#acerca" class="active">Acerca de mí</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#formacion">Formación</a>
+  <a href="#documentos">Documentos</a>
+  <a href="#portafolio">Portafolio</a>
+  <a href="#contacto">Contacto</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</nav>
+
+<!-- Drawer desplegable (mobile) -->
+<div class="nav-drawer" id="navDrawer">
+  <a href="#acerca" class="active">Acerca de mí</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#formacion">Formación</a>
+  <a href="#documentos">Documentos</a>
+  <a href="#portafolio">Portafolio</a>
+  <a href="#contacto">Contacto</a>
+</div>
+
+<!-- ══════════════════════════════════════
+     SIDEBAR — foto + info + links
+══════════════════════════════════════ -->
+<aside class="sidebar">
+  <div class="avatar-wrap">
+    <img src="Images/Foto.png" class="avatar" alt="Foto de Miguel Angel">
+    <div class="sidebar-name">Miguel Angel<br>Martin Meza</div>
+    <div class="sidebar-role">Ing. en Software</div>
+    <div class="sidebar-badge">▸ Disponible</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="sidebar-links">
+    <a href="https://github.com/Pollix27" target="_blank">
+      <span class="link-icon">⌥</span> GitHub
+    </a>
+    <a href="https://linkedin.com/in/miguel-martín-6a14431a3/" target="_blank">
+      <span class="link-icon">◈</span> LinkedIn
+    </a>
+    <a href="mailto:corn_miguel@hotmail.com">
+      <span class="link-icon">◉</span> Email
+    </a>
+    <a href="PDF/CurriculumMartinMezaMiguelAngel.pdf" download>
+      <span class="link-icon">↓</span> CV PDF
+    </a>
+  </div>
+</aside>
+
+<!-- ══════════════════════════════════════
+     MAIN
+══════════════════════════════════════ -->
+<main>
+
+  <!-- Hero -->
+  <div class="hero">
+    <!-- Foto visible solo en mobile (la sidebar se oculta) -->
+    <img src="Images/Foto.png" class="hero-avatar" alt="Foto de Miguel Angel">
+    <div class="hero-label">PORTAFOLIO · 2026</div>
+    <h1>Hola, soy<br><span>Miguel Angel</span></h1>
+    <p class="hero-sub">
+      Estudiante de Ingeniería en Software apasionado por el desarrollo de software,
+      la arquitectura de sistemas y la resolución de problemas complejos.
+    </p>
+    <a class="hero-cta" href="#proyectos">Ver proyectos →</a>
+  </div>
+
+  <!-- Acerca de mí -->
+  <section id="acerca">
+    <h2><span class="sec-num">01 /</span> Acerca de mí</h2>
+    <p>
+      Soy estudiante de Ingeniería en Software con especial interés en el desarrollo
+      de aplicaciones web y móviles, el diseño de arquitecturas de software y las
+      buenas prácticas de ingeniería. Me motiva construir soluciones eficientes y
+      con impacto real.
+    </p>
+    <p>
+      Actualmente me encuentro en séptimo semestre de mi carrera en UACM San Lorenzo Tezonco.
+      Disfruto aprender nuevas tecnologías y colaborar en proyectos de equipo donde
+      pueda aportar tanto en el diseño como en la implementación.
+    </p>
+
+    <div class="about-grid">
+      <div class="stat-card">
+        <div class="stat-label">INSTITUCIÓN</div>
+        <div class="stat-value">UACM San Lorenzo Tezonco</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">CARRERA</div>
+        <div class="stat-value">Ingeniería en Software</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">AÑO DE INGRESO</div>
+        <div class="stat-value">2018</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">UBICACIÓN</div>
+        <div class="stat-value">México, CDMX & Monterrey</div>
+      </div>
+    </div>
+
+    <div class="tags" style="margin-top:24px;">
+      <span class="tag">Desarrollo web</span>
+      <span class="tag">Arquitectura de software</span>
+      <span class="tag">Bases de datos</span>
+      <span class="tag">Control de versiones</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">Java</span>
+      <span class="tag">Metodologías ágiles</span>
+      <span class="tag">UX/UI</span>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <h2><span class="sec-num">02 /</span> Proyectos</h2>
+    <div class="projects-grid">
+      <a class="project-card" href="#" target="_blank">
+        <span class="project-status status-done">✓ Completado</span>
+        <div class="project-title">App de Cumpleaños</div>
+        <div class="project-desc">Aplicación móvil para celebrar el cumpleaños de amigos y familiares, junto con frases, musica y animaciones.</div>
+        <div class="project-tags">
+          <span class="project-tag">Visual Studio code</span>
+          <span class="project-tag">Dart</span>
+          <span class="project-tag">Flutter</span>
+          <span class="project-tag">MySQL</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="#" target="_blank">
+        <span class="project-status status-wip">⚙ En desarrollo</span>
+        <div class="project-title">App de Creación de Reportes</div>
+        <div class="project-desc">Aplicación móvil para registrar y visualizar problemas en computadoras en mal estado tomando los datos y adjuntando con una foto.</div>
+        <div class="project-tags">
+          <span class="project-tag">Android Studio</span>
+          <span class="project-tag">Kotlin</span>
+          <span class="project-tag">PostgreSQL</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Formación -->
+  <section id="formacion">
+    <h2><span class="sec-num">03 /</span> Formación académica</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2018 – Presente</div>
+        <div class="tl-title">Ingeniería en Software</div>
+        <div class="tl-inst">UACM · San Lorenzo Tezonco</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2012 – 2015</div>
+        <div class="tl-title">Soporte y mantenimiento en equipo de cómputo</div>
+        <div class="tl-inst">DGETis 53 · Vicente Guerrero</div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;">
+      <h3 style="font-size:14px;color:var(--muted);font-family:'Space Mono',monospace;margin-bottom:14px;">CURSOS Y CERTIFICACIONES</h3>
+      <div class="tags">
+        <span class="tag">Certificación Windows Office</span>
+        <span class="tag">Curso de HTML/PHP/JavaScript/CSS/Base de datos</span>
+        <span class="tag">Taller de Desarrollo Web</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documentos -->
+  <section id="documentos">
+    <h2><span class="sec-num">04 /</span> Documentos</h2>
+    <p style="margin-bottom:20px;">Aquí puedes encontrar mi currículum y otros documentos relevantes. Se actualizan conforme avanzo en mi formación.</p>
+    <div class="docs-list">
+
+      <a class="doc-item" href="PDF/CurriculumMartinMezaMiguelAngel.pdf" download>
+        <div class="doc-icon">📄</div>
+        <div class="doc-info">
+          <div class="doc-name">Currículum Vitae</div>
+          <div class="doc-meta">PDF · Actualizado 2026</div>
+        </div>
+        <span class="doc-download">↓ Descargar</span>
+      </a>
+
+      <a class="doc-item" href="PDF/carta-presentacion.pdf" download>
+        <div class="doc-icon">✉️</div>
+        <div class="doc-info">
+          <div class="doc-name">Carta de Presentación</div>
+          <div class="doc-meta">PDF · Versión general</div>
+        </div>
+        <span class="doc-download">↓ Descargar</span>
+      </a>
+
+      <a class="doc-item" href="PDF/ConstanciaUniversitaria.pdf" download>
+        <div class="doc-icon">🏅</div>
+        <div class="doc-info">
+          <div class="doc-name">Certificado Universitario</div>
+          <div class="doc-meta">PDF · UACM · Actualmente</div>
+        </div>
+        <span class="doc-download">↓ Descargar</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio">
+    <h2><span class="sec-num">05 /</span> Portafolio</h2>
+    <p style="margin-bottom:20px;">Proyectos en línea — haz clic para visitarlos.</p>
+    <div class="portfolio-grid">
+
+      <a class="portfolio-item" href="https://pollix27.github.io/felicidades/" target="_blank">
+        <img src="Images/Proyecto1.png" alt="Felicidades" class="portfolio-img">
+        <div class="portfolio-label">Felicidades 🎉</div>
+      </a>
+
+      <a class="portfolio-item" href="https://ramptors.net/" target="_blank">
+        <img src="Images/Proyecto2.png" alt="Proyecto 2" class="portfolio-img">
+        <div class="portfolio-label">Ramptors.net</div>
+      </a>
+
+      <a class="portfolio-item" href="https://www.beehappy.com.mx/" target="_blank">
+        <img src="Images/Proyecto3.png" alt="Proyecto 3" class="portfolio-img">
+        <div class="portfolio-label">BeeHappy Balance</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2><span class="sec-num">06 /</span> Contacto</h2>
+    <p style="margin-bottom:20px;">¿Tienes un proyecto en mente o quieres colaborar? No dudes en escribirme.</p>
+    <div class="contact-bar">
+      <div class="contact-item">
+        <span class="contact-label">EMAIL</span>
+        <span class="contact-value"><a href="mailto:corn_miguel@hotmail.com">corn_miguel@hotmail.com</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">GITHUB</span>
+        <span class="contact-value"><a href="https://github.com/Pollix27" target="_blank">@Pollix27</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">LINKEDIN</span>
+        <span class="contact-value"><a href="https://linkedin.com/in/miguel-martín-6a14431a3/" target="_blank">Miguel Ángel M.</a></span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-label">UBICACIÓN</span>
+        <span class="contact-value">México, CDMX & Monterrey</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
